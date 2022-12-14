@@ -14,7 +14,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 .baner {
   display: flex;
@@ -23,7 +23,7 @@ export default {
   width: 100%;
   height: 30%;
   background-color: #252525;
-  color: #e7fcfa;
+  color: #fff;
 }
 
 h1 {

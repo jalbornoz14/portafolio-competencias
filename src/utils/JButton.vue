@@ -28,7 +28,7 @@ export default {
 <style scope>
 /* Boton Primary */
 .j-primary{
-    border: 2px solid #1d4aef;
+    border: 1px solid #1d4aef;
     color: #1d4aef;
 }
 .j-primary::before{
@@ -40,7 +40,7 @@ export default {
 
 /* Boton Default */
 .j-default{
-    border: 2px solid #ffffff;
+    border: 1px solid #ffffff;
     color: #e7fcfa;
 }
 .j-default::before{
@@ -52,7 +52,7 @@ export default {
 
 /* Boton Success */
 .j-success{
-    border: 2px solid #00ff00;
+    border: 1px solid #00ff00;
     color: #00ff00;
 }
 .j-success::before{
@@ -62,9 +62,20 @@ export default {
   color: #000;
 }
 
+/* Boton info */
+.j-info{
+    border: 1px solid #00ffff;
+    color: #00ffff;
+}
+.j-info::before{
+    background: #00ffff;
+}
+.j-info:hover {
+  color: #000;
+}
+
 button {
-  padding: 0.4em;
-  width: 130px;
+  padding: 0.4em 1.5em;
   margin-right: 20px;
   position: relative;
   overflow: hidden;
@@ -91,6 +102,6 @@ button::before {
 }
 
 button:hover::before {
-  width: 105%;
+  width: 150%;
 }
 </style>

@@ -22,7 +22,7 @@
     <v-main>
       <router-view />
     </v-main>
-    <v-footer padless>
+    <v-footer>
       <v-col
         class="text-left"
         cols="9"
@@ -52,8 +52,13 @@ export default {
 </script>
 
 <style>
+html {
+  overflow-y: hidden;
+}
 main{
   background-color: #222222 !important;
+  width: 100%;
+  overflow: auto;
 }
 footer{
   background-color: #222222 !important;
