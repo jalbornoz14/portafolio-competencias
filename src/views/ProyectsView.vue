@@ -1,23 +1,20 @@
 <template>
-  <div class="about">
-    <j-baner :text="'Sobre Mi'"/>
-    <div>
-      <div></div>
-      <div></div>
-    </div>
+  <div class="proyects">
+    <j-baner :text="'Proyectos'"/>
   </div>
 </template>
 
 <script>
 import JBaner from '@/utils/JBaner.vue'
+
 export default {
   components: { JBaner },
-  name: 'AboutView'
+  name: 'ProyectsView'
 }
 </script>
 
-<style scoped>
-.about{
+<style>
+.proyects{
   height: 100%;
 }
 </style>

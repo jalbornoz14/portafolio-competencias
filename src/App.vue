@@ -1,32 +1,77 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-app-bar fixed app dark class="app-bar-dev">
+      <v-toolbar-title >
+        <v-img
+          lazy-src="./assets/upal.png"
+          max-width="300"
+          src="./assets/upal.png"
+          class="img-logo"
+        ></v-img>
+      </v-toolbar-title>
+
+      <v-spacer> </v-spacer>
+
+      <v-btn text to="/"> Inicio </v-btn>
+      <v-btn text to="/about"> Sobre Mi </v-btn>
+      <v-btn text to="/proyects"> Proyecto </v-btn>
+      <v-btn text to="/contact"> Contactame </v-btn>
+      <v-btn text to="/upal"> UPAL </v-btn>
+    </v-app-bar>
+
+    <v-main>
+      <router-view />
+    </v-main>
+    <v-footer padless>
+      <v-col
+        class="text-left"
+        cols="9"
+      >
+        <a href="https://github.com/jalbornoz14" target="_blank">GitHub</a>
+        <a href="https://github.com/jalbornoz14" target="_blank">Instagram</a>
+        <a href="https://github.com/jalbornoz14" target="_blank">Youtube</a>
+      </v-col>
+      <v-col
+        class="text-right copyrigth"
+        cols="3"
+      >
+        <p>© 2022 - Jhefferson Albornoz Vara</p>
+      </v-col>
+    </v-footer>
+  </v-app>
 </template>
 
+<script>
+export default {
+  name: 'App',
+
+  data: () => ({
+    //
+  })
+}
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+main{
+  background-color: #222222 !important;
+}
+footer{
+  background-color: #222222 !important;
+}
+.app-bar-dev {
+  background-color: #222222 !important;
+}
+.img-logo{
+  margin-left: 40%;
 }
 
-nav {
-  padding: 30px;
+a{
+  color: #fff !important;
+  text-decoration: none;
+  margin-right: 15px;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+.copyrigth{
+  color: #fff !important;
 }
 </style>
