@@ -8,7 +8,8 @@
           <div class="compe" v-for="compe in compe.general" :key="compe.title">
             <h3>{{ compe.title }}</h3>
             <div class="img-compe">
-              <v-img class="img" :lazy-src="compe.img" :src="compe.img" height="200"></v-img>
+              <v-img class="img" :lazy-src="compe.img" :src="compe.img" width="320" height="200"></v-img>
+              <div class="text-span"><span>{{compe.description}}</span></div>
             </div>
             <div class="buttons-link">
               <j-button text="GitHub" color="j-primary" v-if="compe.links.github !== ''"/>
@@ -24,7 +25,8 @@
           <div class="compe" v-for="compe in compe.espesific" :key="compe.title">
             <h3>{{ compe.title }}</h3>
             <div class="img-compe">
-              <v-img class="img" :lazy-src="compe.img" :src="compe.img" height="200"></v-img>
+              <v-img class="img" :lazy-src="compe.img" :src="compe.img" width="320" height="200"></v-img>
+              <div class="text-span"><span>{{compe.description}}</span></div>
             </div>
             <div class="buttons-link">
               <a :href="compe.links.github" target="_blank"> <j-button text="GitHub" color="j-primary" v-if="compe.links.github !== ''"/> </a>
@@ -73,12 +75,18 @@ export default {
   padding: 2% 10%;
 }
 
+.text-span{
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.582);
+}
+
 .compe-general{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
 .img-compe{
+  display: flex;
   padding: 10px 20px 10px 0px;
 }
 
