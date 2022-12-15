@@ -8,12 +8,12 @@
           <div class="compe" v-for="compe in compe.general" :key="compe.title">
             <h3>{{ compe.title }}</h3>
             <div class="img-compe">
-              <v-img class="img" lazy-src="https://picsum.photos/id/11/10/6" src="https://picsum.photos/id/11/500/300"></v-img>
+              <v-img class="img" :lazy-src="compe.img" :src="compe.img" height="200"></v-img>
             </div>
             <div class="buttons-link">
               <j-button text="GitHub" color="j-primary" v-if="compe.links.github !== ''"/>
-              <j-button text="Link" v-if="compe.links.web !== ''" />
-              <j-button text="Ver" color="j-info"/>
+              <a :href="compe.links.web" target="_blank"> <j-button text="Link" v-if="compe.links.web !== ''" /> </a>
+              <!-- <j-button text="Ver" color="j-info"/> -->
             </div>
           </div>
         </div>
@@ -24,12 +24,12 @@
           <div class="compe" v-for="compe in compe.espesific" :key="compe.title">
             <h3>{{ compe.title }}</h3>
             <div class="img-compe">
-              <v-img class="img" lazy-src="https://picsum.photos/id/11/10/6" src="https://picsum.photos/id/11/500/300"></v-img>
+              <v-img class="img" :lazy-src="compe.img" :src="compe.img" height="200"></v-img>
             </div>
             <div class="buttons-link">
-              <j-button text="GitHub" color="j-primary" v-if="compe.links.github !== ''"/>
-              <j-button text="Link" v-if="compe.links.web !== ''" />
-              <j-button text="Ver" color="j-info"/>
+              <a :href="compe.links.github" target="_blank"> <j-button text="GitHub" color="j-primary" v-if="compe.links.github !== ''"/> </a>
+              <a :href="compe.links.web" target="_blank"> <j-button text="Link" v-if="compe.links.web !== ''" /> </a>
+              <!-- <j-button text="Ver" color="j-info"/> -->
             </div>
           </div>
         </div>
@@ -68,7 +68,7 @@ export default {
 .content-proyects{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   width: 100%;
   padding: 2% 10%;
 }

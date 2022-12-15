@@ -16,7 +16,6 @@
       <v-btn text to="/about"> Sobre Mi </v-btn>
       <v-btn text to="/proyects"> Proyecto </v-btn>
       <v-btn text to="/contact"> Contactame </v-btn>
-      <v-btn text to="/upal"> UPAL </v-btn>
     </v-app-bar>
 
     <v-main>

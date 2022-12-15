@@ -1,8 +1,8 @@
 <template>
   <div class="container-img">
     <v-img
-      lazy-src="./../../assets/me.jpeg"
-      src="./../../assets/me.jpeg"
+      lazy-src="https://i.ibb.co/0KstY6L/me.jpg"
+      src="https://i.ibb.co/0KstY6L/me.jpg"
       class="img-me"
     ></v-img>
   </div>

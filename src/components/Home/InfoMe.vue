@@ -6,7 +6,7 @@
     <div class="button-list">
         <j-button :text="'Portafolio'" :color="'j-primary'" @click="goToProyects"/>
         <a :href="links.cv" target="_blank"><j-button :text="'CV'"/></a>
-        <a :href="links.matriz" target="_blank"><j-button :text="'Matriz'" :color="'j-success'"/></a>
+        <a :href="links.matriz" target="_blank"><j-button :text="'Matriz de Competencia'" :color="'j-success'"/></a>
     </div>
   </div>
 </template>
@@ -23,7 +23,7 @@ export default {
       description: 'Soy un futuro Ing. de Software apacionado por la técnologia y el desarrollo sobretodo en la web. Tengo mas de 2 años de expreciencia trabajando con técnologias en JavaScript, TypeScript, PHP, SQL y NoSQL.',
       links: {
         cv: 'https://drive.google.com/file/d/10jvl9j93mpJHwBzczJ6A0EKeo0jIP8No/view?usp=sharing',
-        matriz: ''
+        matriz: 'https://docs.google.com/spreadsheets/d/1B7SrGV2oCiLBgbHzjBStTZS4oEXmF2dv/edit?usp=share_link&ouid=100265047572603070889&rtpof=true&sd=true'
       }
     }
   },
