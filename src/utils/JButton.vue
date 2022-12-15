@@ -91,7 +91,7 @@ button {
 button::before {
   content: '';
   width: 0;
-  height: 300%;
+  height: 500%;
   position: absolute;
   top: 50%;
   left: 50%;
