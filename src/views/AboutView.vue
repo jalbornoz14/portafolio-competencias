@@ -31,11 +31,11 @@ export default {
         },
         {
           title: 'Expreciencia',
-          content: 'He trabajado en empresa de software por mas de 2 años y como FreeLancer por mas de 3 años, atulmente de desarrollo mis habilidades en DJDisol S.A.C. una empresa de desarrollo de software.'
+          content: 'He trabajado en empresas de software por mas de 2 años y como FreeLancer por mas de 3 años, atualmente desarrollo mis habilidades en DJDisol S.A.C. una empresa de desarrollo de software. Y me gustaría seguir cresiendo en el mundo del desarrollo de software.'
         },
         {
           title: 'Proposito',
-          content: 'Mi proposito es ser un desarrollador de software Full-Stack, con conocimientos en Front-End y Back-End, y con conocimientos en la creacion de aplicaciones moviles. Actualmente busco expandir mis conocimientos en el mundo web con JavaScript y en Flutter para aplicaciones moviles.'
+          content: 'Mi proposito es ser un desarrollador de software Full-Stack, con conocimientos en Front-End y Back-End, y con conocimientos en la creacion de aplicaciones moviles. Actualmente busco expandir mis conocimientos en el mundo web con JavaScript y en Flutter *Estudiandolo* para aplicaciones moviles.'
         }
       ],
       skillsMe: [
